@@ -4,10 +4,6 @@ AOS.init({
   duration: 1000
 });
 
-
-// Add your javascript here
-
-//----------------------------------------------------------------------------//
 // Get the button:
 let mybutton = document.getElementById("myBtn");
 

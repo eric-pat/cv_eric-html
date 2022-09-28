@@ -1,33 +1,67 @@
 /*bloc skills*/
-#container{
-    flex-wrap: nowrap;
-    align-items: center;
+#container {
+  flex-wrap: nowrap;
+  align-items: center;
+  width: 100%;
 }
 
 /* barre de progression*/
-.barre_color{
-    background-color: rgb(192, 192, 192);
-    width: 80%;
-        border-radius: 15px;
+.wrapper {
+  width: 380px;
+  max-width: 100%;
 }
 
-.skill {
-    background-color: #39c0ed;
-    color: white;
-    padding: 1%;
-    text-align: right;
-    font-size: 20px;
-        border-radius: 15px;
+.progress-bar {
+  height: 30px;
+  width: 100%;
+  background-color: rgb(192, 192, 192);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 2px 0 10px inset rgba(0, 0, 0, 0.2);
+  position: relative;
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 
-.html {
-    width: 90%;
+
+.bar {
+  width: 0;
+  height: 100%;
+  background-color: #39c0ed;
+
+  /*Lollipop background gradient*/
+  background-image: linear-gradient(
+    -45deg,
+    rgba(255, 255, 255, 0.2) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.2) 50%,
+    rgba(255, 255, 255, 0.2) 75%,
+    transparent 75%,
+    transparent
+  );
+
+  background-size: 30px 30px;
+  animation: move 2s linear infinite;
+  box-shadow: 2px 0 10px inset rgba(0, 0, 0, 0.2);
+  transition: width 2s ease-out;
 }
 
-#barre_css {
-    margin-top: 15px;
+/*Lollipop background gradient animation*/
+@keyframes move {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 30px 30px;
+  }
 }
-.css {
-    width: 90%;
+
+.perc {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-weight: bold;
 }
-    

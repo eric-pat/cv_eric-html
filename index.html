@@ -184,56 +184,65 @@
           </div>
         </div>
         <div class="shadow-1-strong bg-white my-5 p-5" id="compétences">
-          <div class="about-section">
-            <div>
-              <div class="col-md-6">
-                <h2 class="h2 fw-light mb-4">Skills</h2>
-                <div class="row" id="container">
-                  <div>
-                    <p>Leadership</p>
-                    <p>Travail en équipe</p>
-                    <p>Adaptabilité</p>
-                  </div>
-                  <div>
+          <div class="portfolio-section">
+
+            <div class="col-md-6">
+              <h2 class="h2 fw-light mb-4">Skills</h2>
+              <div class="row col-md-5" data-aos="fade-left" data-aos-delay="200" id="container">
+                <div>
+                  <p>Leadership</p>
+                  <p>Travail en équipe</p>
+                  <p>Adaptabilité</p>
+                </div>
+                <!-- Progress Bar -->
+                <div>
+                  <div class="wrapper">
                     <p>HTML</p>
-                    <div class="barre_color">
-                      <div class="skill html">90%</div>
+                    <div class="progress-bar">
+                      <div class="bar" data-size="90">
+                        <span class="perc"></span>
+                      </div>
                     </div>
-                    <p id="barre_css">CSS</p>
-                    <div class="barre_color">
-                      <div class="skill css">90%</div>
+                    <p>CSS</p>
+                    <div class="progress-bar">
+                      <div class="bar" data-size="90">
+                        <span class="perc"></span>
+                      </div>
                     </div>
                   </div>
                 </div>
+                <!-- End Progress Bar -->
               </div>
             </div>
+
           </div>
         </div>
-        <div class="shadow-1-strong bg-white my-5 p-5" id="contact">
-          <div class="contant-section">
-            <h2 class="h2 fw-light text mb-4">Contact</h2>
-            <div class="row mb-4">
-              <div class="col-md-5" data-aos="fade-left" data-aos-delay="200" style="display: flex; align-items:center">
-                <div class="mt-1">
-                  <div class="h6" style="margin-bottom: 20px;"><i class="fas fa-home pe-2 text-muted"
-                      style="width:24px;opacity:0.85;"></i>
-                    23 cité les Coustals, 24150 Varennes</div>
-                  <div class="h6" style="margin-bottom: 20px;"><i class="fas fa-phone pe-2 text-muted"
-                      style="width:24px;opacity:0.85;"></i>
-                    06 65 64 80 77</div>
-                  <div class="h6"><i class="far fa-envelope pe-2 text-muted" style="width:24px;opacity:0.85;"></i>
-                    ekcz@orange.fr</div>
-                </div>
+      </div>
+      <div class="shadow-1-strong bg-white my-5 p-5" id="contact">
+        <div class="contact-section">
+          <h2 class="h2 fw-light text mb-4">Contact</h2>
+          <div class="row mb-4">
+            <div class="col-md-5" data-aos="fade-left" data-aos-delay="200" style="display: flex; align-items:center">
+              <div class="mt-1">
+                <div class="h6" style="margin-bottom: 20px;"><i class="fas fa-home pe-2 text-muted"
+                    style="width:24px;opacity:0.85;"></i>
+                  23 cité les Coustals, 24150 Varennes</div>
+                <div class="h6" style="margin-bottom: 20px;"><i class="fas fa-phone pe-2 text-muted"
+                    style="width:24px;opacity:0.85;"></i>
+                  06 65 64 80 77</div>
+                <div class="h6"><i class="far fa-envelope pe-2 text-muted" style="width:24px;opacity:0.85;"></i>
+                  ekcz@orange.fr</div>
               </div>
-              <div class="col-md-7 d-print-none" data-aos="zoom-in" data-aos-delay="100"><iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2829.526301225985!2d0.6791700157373937!3d44.83121418347577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ab25e0c61bd95b%3A0x8f7d1e21edbdb410!2s23%20Cit%C3%A9%20les%20Coustals%2C%2024150%20Varennes!5e0!3m2!1sfr!2sfr!4v1664110296793!5m2!1sfr!2sfr"
-                  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="map"></iframe>
-              </div>
+            </div>
+            <div class="col-md-7 d-print-none" data-aos="zoom-in" data-aos-delay="400"><iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2829.526301225985!2d0.6791700157373937!3d44.83121418347577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ab25e0c61bd95b%3A0x8f7d1e21edbdb410!2s23%20Cit%C3%A9%20les%20Coustals%2C%2024150%20Varennes!5e0!3m2!1sfr!2sfr!4v1664110296793!5m2!1sfr!2sfr"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="map"></iframe>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
   </div>
   <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
   <footer class="pt-4 pb-4 text-muted text-center d-print-none">
@@ -246,7 +255,7 @@
   <script src="scripts/mdb.min.js?ver=1.2.1"></script>
   <script src="scripts/aos.js?ver=1.2.1"></script>
   <script src="scripts/main.js?ver=1.2.1"></script>
-
+  <script src="scripts/custom.js"></script>
 </body>
 
 </html>
