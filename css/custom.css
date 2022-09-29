@@ -23,7 +23,6 @@
   margin-bottom: 10px;
 }
 
-
 .bar {
   width: 0;
   height: 100%;
@@ -65,3 +64,11 @@
   color: #fff;
   font-weight: bold;
 }
+
+/*position bar mobile*/
+@media (max-width: 767px) {
+    #container {
+    flex-wrap: wrap;
+  }
+}
+
