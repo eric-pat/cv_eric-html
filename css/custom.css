@@ -67,8 +67,20 @@
 
 /*position bar mobile*/
 @media (max-width: 767px) {
-    #container {
+  #container {
     flex-wrap: wrap;
   }
 }
+/*------------------*/
 
+@media (min-width: 768px) {
+  .col-skills {
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-interets {
+    width: 100%;
+  }
+}
